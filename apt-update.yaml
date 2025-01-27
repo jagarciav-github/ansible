@@ -1,8 +1,13 @@
 ---
-- hosts: all
-    become: true
-    tasks:
+- name: APT Update
+  hosts: all
+  become: yes
+  tasks:
+    - name: Actualizar la caché de APT
       apt:
         update_cache: yes
+
+    - name: Actualizar todos los paquetes instalados
+      apt:
         upgrade: dist
       register: apt_upgrade
