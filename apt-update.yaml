@@ -6,8 +6,7 @@
     - name: Actualizar la caché de APT
       apt:
         update_cache: yes
-
     - name: Actualizar todos los paquetes instalados
       apt:
-        upgrade: dist
+        upgrade: yes
       register: apt_upgrade
