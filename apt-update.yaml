@@ -4,6 +4,5 @@
   tasks:
       apt:
         update_cache: yes
-      apt:
         upgrade: dist
       register: apt_upgrade
