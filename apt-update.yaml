@@ -1,7 +1,7 @@
 ---
 - name: APT Update & Upgrade
   hosts: all
-  become: true  # Ejecutar con privilegios de superusuario
+#  become: true  # Ejecutar con privilegios de superusuario
 
   tasks:
     - name: APT Update
