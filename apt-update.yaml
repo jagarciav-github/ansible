@@ -1,7 +1,6 @@
 ---
 - name: APT Update & Upgrade
   hosts: all
-  become_method: sudo
   become: true  # Ejecutar con privilegios de superusuario
 
   tasks:
